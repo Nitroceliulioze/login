@@ -17,7 +17,7 @@ export class AuthService {
   }
 
   saveUser(inputData: any) {
-return this.http.post(this.apiUrl, inputData)
+  return this.http.post(this.apiUrl, inputData)
   }
 
   updateUser(code: any, inputData: any) {

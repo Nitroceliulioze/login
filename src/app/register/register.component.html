@@ -1,1 +1,35 @@
-<p>register works!</p>
+<mat-card>
+    <mat-card-header>
+        User Registration
+    </mat-card-header>
+  <mat-card-content>
+    <form class="example-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <mat-form-field style="width:60vw" class="example-full-width">
+        <mat-label>User Name</mat-label>
+        <input matInput formControlName="id" />
+      </mat-form-field>
+      <mat-form-field style="width:60vw" class="example-full-width">
+        <mat-label>Name</mat-label>
+        <input matInput formControlName="name" />
+      </mat-form-field>
+      <mat-form-field style="width:60vw" class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input type="password" matInput formControlName="password" />
+      </mat-form-field>
+      <mat-form-field style="width:60vw" class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput formControlName="email" />
+      </mat-form-field>
+      <div>
+        <mat-radio-group  formControlName="gender" aria-label="Gender">
+            <mat-radio-button value="female">Female</mat-radio-button>
+            <mat-radio-button value="male">Male</mat-radio-button>
+          </mat-radio-group>
+      </div>
+      <button mat-raised-button style="margin-right:1em;">Submit</button>
+      <a mat-button routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+
+      
+    </form>
+  </mat-card-content>
+</mat-card>

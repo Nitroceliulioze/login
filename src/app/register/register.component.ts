@@ -12,11 +12,11 @@ import { Router } from '@angular/router';
 export class RegisterComponent {
 
   constructor(private fb: FormBuilder, private toastr: ToastrService, private service: AuthService, private router: Router) {}
-
+ //password validation Minimum eight characters, at least one letter and one number:
   registerForm = this.fb.group({
     id: this.fb.control('', Validators.compose([Validators.required, Validators.minLength(5)])),
     name: this.fb.control('', Validators.required),
-    password: this.fb.control('', Validators.compose([Validators.required, Validators.pattern("^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$")])),
+    password: this.fb.control('', Validators.compose([Validators.required, Validators.pattern("^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$")])),
     email: this.fb.control('', Validators.compose([Validators.required, Validators.email])),
     gender: this.fb.control('female'),
     role: this.fb.control(''),
@@ -27,6 +27,7 @@ export class RegisterComponent {
     if(this.registerForm.valid) {
       this.service.saveUser(this.registerForm.value).subscribe(res=>{
         this.toastr.success('Please concatc admin for enableing access','Registered Successfully')
+        this.router.navigate(['login'])
       })
     } else {
       this.toastr.warning('Please enter valid data');

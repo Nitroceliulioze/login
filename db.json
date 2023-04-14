@@ -8,6 +8,51 @@
       "gender": "female",
       "role": "admin",
       "isActive": true
+    },
+    {
+      "id": "Test",
+      "name": "Test Test",
+      "password": "test123",
+      "email": "test@test.com",
+      "gender": "female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "Test1",
+      "name": "Test Test",
+      "password": "test123",
+      "email": "test@test.com",
+      "gender": "female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "Test2",
+      "name": "Test Test",
+      "password": "test123",
+      "email": "test@test.com",
+      "gender": "female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "Test3",
+      "name": "Test Test",
+      "password": "test123",
+      "email": "test@test.com",
+      "gender": "female",
+      "role": "",
+      "isActive": false
+    },
+    {
+      "id": "Test4",
+      "name": "Test Test",
+      "password": "test123",
+      "email": "test@test.com",
+      "gender": "female",
+      "role": "",
+      "isActive": false
     }
   ]
 }

@@ -1,6 +1,13 @@
 {
   "user": [
-    
-    
+    {
+      "id": "Admin",
+      "name": "Admin Admin",
+      "password": "admin123",
+      "email": "admin@test.com",
+      "gender": "female",
+      "role": "admin",
+      "isActive": true
+    }
   ]
 }

@@ -17,7 +17,9 @@ export class LoginComponent {
     private toastr: ToastrService,
     private service: AuthService,
     private router: Router
-  ) {}
+  ) {
+    sessionStorage.clear();
+  }
 
   loginForm = this.fb.group({
     username: this.fb.control('', Validators.required),

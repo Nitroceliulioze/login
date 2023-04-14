@@ -33,7 +33,7 @@
       <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef> Action </th>
         <td mat-cell *matCellDef="let element"> 
-            <a (click)="updateUser(element.id)" mat-raised-button style="margin-right:1em;" color="accent">Update</a>
+            <a *ngIf="element.role !='admin'" (click)="updateUser(element.id)" mat-raised-button style="margin-right:1em;" color="accent">Update</a>
         </td>
       </ng-container>
 

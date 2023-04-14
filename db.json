@@ -15,8 +15,8 @@
       "password": "test123",
       "email": "test@test.com",
       "gender": "female",
-      "role": "",
-      "isActive": false
+      "role": "staff",
+      "isActive": true
     },
     {
       "id": "Test1",
@@ -53,6 +53,25 @@
       "gender": "female",
       "role": "",
       "isActive": false
+    },
+    {
+      "id": "Diana",
+      "name": "Diana Zukauskiene",
+      "password": "123123123",
+      "email": "diana@test.com",
+      "gender": "female",
+      "role": "quiality",
+      "isActive": true
+    }
+  ],
+  "role": [
+    {
+      "id": "staff",
+      "name": "Staff"
+    },
+    {
+      "id": "quiality",
+      "name": "Quiality"
     }
   ]
 }

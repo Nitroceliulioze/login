@@ -304,7 +304,7 @@
   />
   <span>Welcome</span>
   <span><a routerLink="" style="color:white; margin-left: 2em;">Home</a></span>
-  <span><a routerLink="user" style="color:white; margin-left: 2em;">User</a></span>
+  <span><a *nfIf="isAdminUser" routerLink="user" style="color:white; margin-left: 2em;">User</a></span>
 
   <div class="spacer"></div>
 

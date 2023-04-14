@@ -12,16 +12,20 @@ export class AuthService {
     return this.http.get(this.apiUrl);
   }
 
-  getByCode(code: any) {
-    return this.http.get(this.apiUrl + '/' + code);
+  getAllRole() {
+    return this.http.get('http://localhost:3000/role');
+  }
+
+  getByCode(id: any) {
+    return this.http.get(this.apiUrl + '/' + id);
   }
 
   saveUser(inputData: any) {
     return this.http.post(this.apiUrl, inputData);
   }
 
-  updateUser(code: any, inputData: any) {
-    return this.http.put(this.apiUrl + '/' + code, inputData);
+  updateUser(id: any, inputData: any) {
+    return this.http.put(this.apiUrl + '/' + id, inputData);
   }
 
   isLoggedIn() {
